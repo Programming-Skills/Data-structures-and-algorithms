@@ -56,7 +56,21 @@ def powerOfTwo(n):
 # 1! = 1
 
 def factorial(n):
+    assert n >= 0 and int(n) == n, "The number must be positive integer only"
     if n in [0, 1]:
         return 1
     else:
         return n * factorial(n-1)
+
+# 3. The unintentional case - the constraint
+
+### Fibonacci numbers - recursion ###
+
+# 1. Recursive case - the flow
+
+def fib(n):
+    assert n >= 0 and int(n) == n, "The number must be positive integer only"
+    if n in [0,1]:
+        return n
+    else:
+        return fib(n-1) + fib(n-2) 
