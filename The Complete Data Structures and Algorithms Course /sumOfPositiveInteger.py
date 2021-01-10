@@ -23,7 +23,7 @@ def sumOfPositiveInteger(num):
 
 if __name__ == "main":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('arr', nargs="+", type= int)
+    parser.add_argument('num', nargs="+", type=int)
     args = parser.parse_args()
     print("File executed!")
-    print(sumOfPositiveInteger(args.arr))
+    print(sumOfPositiveInteger(args.num))
